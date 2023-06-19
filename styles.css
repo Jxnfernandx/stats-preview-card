@@ -7,7 +7,8 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
-    color: var(--white);
+    color: var(--slightly-transparent-whiteS);
+    font-family: var(--font-one);
 }
 
 :root {
@@ -33,7 +34,66 @@
 
 body {
     background-color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
-h1 {
+h1, span {
     color: var(--white);
+    font-size: 2.5rem;
 }
+h1 span {
+    color: var(--soft-violet);
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 75rem;
+    height: 30rem;
+    background-color: var(--dark-desaturated-blue);
+
+}
+.container img {
+    width: 50%;
+}
+.card-picture {
+    filter: grayscale(100%) sepia(100%) hue-rotate(214deg) saturate(3) brightness(.5);
+    background-color: var(--soft-violet);
+      }
+      
+  
+  
+p {
+   line-height: 1.5rem;
+   font-weight: 400;
+   font-size: 1rem;
+   padding-right: 4rem;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    padding: 5rem;
+}
+.stats {
+    display: flex;
+    gap: 2rem;
+    padding-top: 4rem;
+}
+.stats p {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .8rem;
+    font-family: var(--font-two);
+
+}
+.stats span {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+
+
+  
